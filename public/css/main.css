@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Oswald|Raleway|Roboto|Ubuntu');
+
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat';
+    background-color: rgb(13, 13, 17);
+}
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* .page {
+    background-color: rgb(13, 13, 17);
+    width: 96%;
+    height: 100%;
+    color: white;
+    padding: 2%;
+} */
+
+.alert {
+    background-color: rgba(119, 42, 42, 0.5);
+    margin: 10px;
+    padding: 10px;
+}
+.alert_success {
+    background-color: rgba(42, 119, 52, 0.5);
+    margin: 10px;
+    padding: 10px;    
+}
+
+/* TERMS PAGE */
+#terms {
+    padding: 5%;
+    padding-right: 50%;
+}
+
+/* TITLE PAGE */
+#overlay {
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#background_1, #background_2 {
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: absolute;    
+    z-index: -2;
+}
+#title { 
+    height: 80%;
+    position: relative;
+}
+#title_text {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-size: 4vw;
+    font-family: 'Ubuntu';
+    display: none;
+}
+#title_buttons {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.title_buttons {
+    display: none;
+    height: 75px;
+    font-size: 1.2vw;
+    text-shadow: 2px 2px black;
+    border: none;
+    color: white;
+    background-color: rgba(0,0,0,.0);
+    text-shadow: 2px 2px black;
+    margin-right: 4.1%;
+    margin-left: 4.1%;
+}
+
+/* PAGES */
+.pages {
+    width: 92%; 
+    overflow: auto;
+    position: static;
+    background-color: rgb(13, 13, 17);
+    display: none;
+    padding: 4%;
+}
+
+
+/* FORM */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    font-family: 'Montserrat';
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+form > button {
+    display:inline;
+    overflow: auto;
+    white-space: nowrap;
+    margin:0px auto;
+}
+
+.button {
+    font-size: 2em;
+    color: white;
+    border: 0;
+    padding: 1%;
+    background-color: rgba(10,10,10,.0);
+    transition: 1s;
+    border-radius: 2px;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
